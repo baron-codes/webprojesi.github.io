@@ -45,7 +45,8 @@ window.onload = function () {
 
   const fiyatlar = {
   'Coilover':10000,
-  'Air Süspansiyon Sistemi':30000,
+  'Varex Egzoz Kiti':4.976,
+  'Air Süspansiyon Sistemi':30.000,
   'Spoiler': 1600,
   'Kelebek Cam Kaplama ': 498,
   'Ön Lip': 1500,
