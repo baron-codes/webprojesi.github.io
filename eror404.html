@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook - Sayfa Bulunamadı</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: 'Comic Sans MS', Comic, sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 0;
+      color: #ff5252;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #ff5252;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: #ff1744;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Üzgünüz , Facebook Bağlantı Yok! <br> Yada Daha aktif Değil İstersen Geri Dön Başka Şeyler'e Bak.</p>
+  <a href="index.html">Karşılama Ekranına Dön</a>
+
+  <!-- değerlendirme -->
+    <style>
+  h1 {
+      font-size: 6rem;
+      color: #ff5252;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff5252;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .star {
+      font-size: 2.5rem;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .star.hover,
+    .star.selected {
+      color: gold;
+    }
+
+    #thanks {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #0f0;
+    }
+  </style>
+</head>
+
+  <div class="rating">
+    <span class="star" data-value="1">★</span>
+    <span class="star" data-value="2">★</span>
+    <span class="star" data-value="3">★</span>
+    <span class="star" data-value="4">★</span>
+    <span class="star" data-value="5">★</span>
+  </div>
+  <p id="thanks"></p>
+
+  <script>
+    const stars = document.querySelectorAll('.star');
+    const thanks = document.getElementById('thanks');
+
+    stars.forEach((star, index) => {
+      star.addEventListener('mouseover', () => {
+        highlightStars(index);
+      });
+
+      star.addEventListener('mouseout', () => {
+        resetStars();
+      });
+
+      star.addEventListener('click', () => {
+        selectStars(index);
+        thanks.textContent = `Teşekkürler! ${index + 1} yıldız verdiniz.`;
+      });
+    });
+
+    function highlightStars(index) {
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add('hover');
+      }
+    }
+
+    function resetStars() {
+      stars.forEach(star => star.classList.remove('hover'));
+    }
+//  hata alıyozz
+    function selectStars(index) {
+      stars.forEach(star => star.classList.remove('selected'));
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add('selected');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.neden-biz {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  height: 100%;
+  margin-top: 130px;
+  border-radius: 30px;
+  width: 1000px;
+  margin-left: 20%;
+}
+
+.neden-biz h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: red;
+}
+
+.neden-kartlar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.neden-kart {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.neden-kart:hover {
+  transform: scale(1.05);
+}
+
+.neden-kart i {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.neden-kart h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.neden-kart p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.yorumlar {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 30px;
+  width: 1000px;  
+  margin-left: 20%;
+  margin-top: 30px;
+}
+.yorumlar h2{
+    color: red;
+}
+.yorum {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.yorum span {
+  display: block;
+  margin-top: 10px;
+  color: red;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 30px;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: darkred;
+}

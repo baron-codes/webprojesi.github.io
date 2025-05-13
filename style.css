@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    user-select: none;
+}
+html{
+    background-color: rgb(70, 17, 4);
+}
+/* body */
+.bodyy{
+    min-height: 100vh;
+    background-image: url(bg.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* body */
+/* navbar */
+.logo{
+    width: 100px;
+    height: 96px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 100px;
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+.head a{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    transition: 1s ease;
+}
+.head a:hover{
+    color: brown;
+}
+.navbar a{
+    font-size: 25px ;
+    color: red;
+    margin-left: 30px;
+    transition: 1s ease;
+}
+.navbar a:hover{
+     color: brown;
+     border: 1px solid black;
+}
+
+.menu-btn{
+    font-size: 25px;
+    color: red;
+    background-color: rgba(255, 255, 255, .2);
+    display: block;
+}
+/* navbar */

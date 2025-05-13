@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Topal Garage - Ürünler  </title>
+  <link rel="stylesheet" href="ürünler-style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="ürünler-script.js"></script>
+</head>
+<body>
+      <div class="bodyy" style="background-color: darkred;background-image: none;">
+      <div class="header">
+        <!-- yahuuu şu header tırnak yokmuş kos koca kod çalışmıyor tarih 11 mayıs saat22:36 yeni buldum en son 23 nisanda hata veriyordu -->
+
+        <img class="logo" src="logo-transparent.png" />
+
+          <div class="head"><a href="index.html">Topal Garaj</a> </div>
+
+          <div class="navbar">
+          <a href="anasayfa.html">Anasayfa</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="İletisim.html">İletişim</a>
+          <a href="ürünler.html">Ürünler</a>
+          </div>
+        </div>
+       
+       <!-- alt -->
+    <section class="products">
+   
+    <h2>Ürünlerimiz</h2>
+    <div class="category-filter">
+      <button onclick="filtr('mekanik')">Mekanik Parçalar</button>
+      <button onclick="filtr('elektrik')">Elektrik Aksamı</button>
+      <button onclick="filtr('aksesuar')">Aksesuarlar</button>
+    </div>
+    
+    <div class="product-list">
+        <div class="urun mekanik">
+        <hr>
+        <hr>
+        <div class="ust">
+      <!-- 1 -->
+       
+      <div class="product-card" data-fiyat="10000">
+        <img src="./img/coiver.jpeg" alt="Mekanik">
+        <h3>Coilover</h3>
+        <p>Fiyat:₺10.000</p>
+        <button onclick="sepeteEkle('Coilover')">Sepete Ekle</button>
+        </div>
+       <!-- 2 -->
+        <div class="product-card" data-fiyat="30000">
+        <img src="./img/air.jpeg" alt="Mekanik">
+        <h3>basma</h3>
+        <p>Fiyat:₺30.000</p>
+        <button onclick="sepeteEkle('Air')">Sepete Ekle</button>
+        </div>
+        <!--3  -->
+          <div class="product-card">
+        <img src="./img/varex.jpeg" alt="Mekanik">
+        <h3>Varex Egzoz Kiti</h3>
+        <p>Fiyat:₺4.976</p>
+        <button onclick="sepeteEkle('Varex')">Sepete Ekle</button>
+        </div>
+        <!-- 4 -->
+          <div class="product-card">
+        <img src="img/kulegergi.jpeg" alt="Mekanik">
+        <h3>Kule Gergisi</h3>
+        <p>Fiyat:  ₺5.500</p>
+        <button onclick="sepeteEkle('Kule Gergisi')">Sepete Ekle</button>
+        </div>
+        <br>
+        </div>
+        <div class="alt">
+        <!-- 5 -->
+          <div class="product-card">
+        <img src="img/flanş.jpeg" alt="Mekanik">
+        <h3>Jant Flanşı</h3>
+        <p>Fiyat:₺ 2500 </p>
+        <button onclick="sepeteEkle('Flanşlar')">Sepete Ekle</button>
+        </div>
+        <!-- 6 -->
+          <div class="product-card">
+        <img src="img/ssr.jpeg" alt="Mekanik">
+        <h3>SSR Jant</h3>
+        <p>Fiyat:₺ 35.000</p>
+        <button onclick="sepeteEkle('SSR Jant')">Sepete Ekle</button>
+        </div>
+        <!-- 7 -->
+          <div class="product-card" data-fiyat="6000">
+        <img src="img/kamber.jpeg" alt="Mekanik">
+        <h3>Kamber Kiti</h3>
+        <p>Fiyat:₺ 6000</p>
+        <button onclick="sepeteEkle('Kamber Kiti')">Sepete Ekle</button>
+        </div>
+        <!-- 8 -->
+          <div class="product-card">
+        <img src="img/hava.jpeg" alt="Mekanik">
+        <h3>Açık Hava Fitresi</h3>
+        <p>Fiyat: 1500 TL</p>
+        <button onclick="sepeteEkle('Açık Hava')">Sepete Ekle</button>
+        </div>
+        </div>
+         
+       </div>
+        <!-- mekanik bitiş -->
+         <hr>
+         <hr>
+         <!-- Elektrik başlangıç -->
+               <!-- 1 -->
+         <div class="urun elektrik">
+                 <div class="be">
+               <div class="product-card">
+               <img src="img/amarikanpark.webp" alt="Elektrik Aksamı">
+               <h3>Amarikan Park</h3>
+               <p>Fiyat: ₺600</p>
+               <button onclick="sepeteEkle('Amarikan Park')">Sepete Ekle</button>
+               </div>
+               <!-- 2 -->
+                <div class="product-card">
+               <img src="img/dblekran.jpeg" alt="Elektrik Aksamı">
+               <h3>Double Ekran </h3>
+               <p>Fiyat: ₺13.000</p>
+               <button onclick="sepeteEkle('Double Ekran')">Sepete Ekle</button>
+               </div>
+               <!-- 3 -->
+                <div class="product-card">
+               <img src="img/sisledi.jpeg" alt="Elektrik Aksamı">
+               <h3>Sis Ledi </h3>
+               <p>Fiyat: ₺1500 TL</p>
+               <button onclick="sepeteEkle('Sis Ledi')">Sepete Ekle</button>
+               </div>
+               <!-- 4 -->
+                <div class="product-card">
+               <img src="img/geri.webp" alt="Elektrik Aksamı">
+               <h3>Geri Dönüş Kamerası </h3>
+               <p>Fiyat: ₺900</p>
+               <button onclick="sepeteEkle('Geri Dönüş Kamerası')"> Sepete Ekle</button>
+               </div>
+              </div>
+               <div class="ba">
+                <!-- 5 -->
+                <div class="product-card">
+               <img src="img/ayakled.webp" alt="Elektrik Aksamı">
+               <h3>Ayak Altı Led </h3>
+               <p>Fiyat: ₺700</p>
+               <button onclick="sepeteEkle('Ayak Altı Led')">Sepete Ekle</button>
+               </div>
+                <!-- 6 -->
+                <div class="product-card">
+               <img src="img/diadem.webp" alt="Elektrik Aksamı">
+               <h3>Diadem Ampul </h3>
+               <p>Fiyat: ₺800</p>
+               <button onclick="sepeteEkle('Diadem Ampul ')">Sepete Ekle</button>
+               </div>
+                <!-- 7 -->
+                <div class="product-card">
+               <img src="img/xenon.webp" alt="Elektrik Aksamı">
+               <h3>Xenon Far </h3>
+               <p>Fiyat: ₺13.000</p>
+               <button onclick="sepeteEkle('Xenon Far')">Sepete Ekle</button>
+               </div>
+                <!-- 8 -->
+                <div class="product-card">
+               <img src="img/reiss.webp" alt="Elektrik Aksamı">
+               <h3>Reiss Audio Rs-M8dm </h3>
+               <p>Fiyat: ₺4.588,50</p>
+               <button onclick="sepeteEkle('Reiss Midrange')">Sepete Ekle</button>
+               </div>
+              </div>
+             
+              <hr>
+              <hr>
+            </div>
+            <div class="urun aksesuar">
+                    <div class="sa">
+                      <!-- 1 -->
+                        <div class="product-card" data-fiyat="1600">
+                        <img src="img/spoiler.jpeg" alt="AKSESUAR Parçası">
+                        <h3>Spoiler </h3>
+                        <p>Fiyat: ₺1600</p>
+                        <button onclick="sepeteEkle('Spoiler')">Sepete Ekle</button>
+                        </div>
+                        <!-- 2 -->
+                         <div class="product-card" data-fiyat="498">
+                        <img src="img/kelebek.jpeg" alt="AKSESUAR Parçası">
+                        <h3>Kelebek Cam Kaplama </h3>
+                        <p>Fiyat: ₺498</p>
+                        <button onclick="sepeteEkle('Kelebek Cam Kaplama ')">Sepete Ekle</button>
+                        </div>
+                          <!-- 3 -->
+                         <div class="product-card" data-fiyat="1500">
+                        <img src="img/lip.jpeg" alt="AKSESUAR Parçası">
+                        <h3>Ön Lip </h3>
+                        <p>Fiyat:₺ 1500 TL</p>
+                        <button  onclick="sepeteEkle('Ön Lip')">Sepete Ekle</button>
+                        </div>
+                          <!-- 4 -->
+                         <div class="product-card" data-fiyat="400">
+                        <img src="img/plakalık.jpeg" alt="AKSESUAR Parçası">
+                        <h3>İsme Özel Plakalık</h3>
+                         <p>Fiyat:₺ 400 TL</p>
+                        <button  onclick="sepeteEkle('Özel Plakalık')">Sepete Ekle</button>
+                        </div>
+                    </div>
+                    <div class="as">
+                        <!-- 5 -->
+                         <div class="product-card" data-fiyat="9000">
+                        <img src="img/body.jpeg" alt="AKSESUAR Parçası">
+                        <h3>Body Kit</h3>
+                        <p>Fiyat:₺ 9000</p>
+                        <button  onclick="sepeteEkle('Kelebek Cam Kaplama ')">Sepete Ekle</button>
+                        </div>
+                        <!-- 6 -->
+                         <div class="product-card">
+                        <img src="img/areo.webp" alt="AKSESUAR Parçası">
+                        <h3>Areon Koku</h3>
+                        <p>Fiyat:₺ 450</p>
+                        <button  onclick="sepeteEkle('Areon Koku')">Sepete Ekle</button>
+                        </div>
+                        <!-- 7 -->
+                         <div class="product-card">
+                        <img src="img/yarasa.jpeg" alt="AKSESUAR Parçası">
+                        <h3>Yarasa Ayna</h3>
+                        <p>Fiyat:₺ 500</p>
+                        <button  onclick="sepeteEkle('Yarasa Ayna')">Sepete Ekle</button>
+                        </div>
+                        <!-- 8 -->
+                         <div class="product-card">
+                        <img src="img/koltuk.webp" alt="AKSESUAR Parçası">
+                        <h3>Koltuk Kılıfı</h3>
+                        <p>Fiyat:₺ 400</p>
+                        <button  onclick="sepeteEkle('Koltuk Kılıfı')">Sepete Ekle</button>
+                        </div>
+                        </div>
+                        
+                        <hr>
+                        <hr>
+                      </div>
+                      <div class="cass">
+                       <h2>🛒 Sepet</h2>
+                       <div id="sepet"></div>
+                       <p id="toplamTutar" class="toplam-tutar">Toplam: 0 TL</p>
+                      </div>
+                       <hr>
+                       <!--sepete css deneme  -->
+                      <style>
+                        hr{
+                          display: none;
+                        }
+                        .cass{
+                          width: 200px;
+                          margin-left:  1000px; 
+                          margin-top: -600px;
+                        }
+                      </style>
+        <!-- Elektrik bitiş -->
+       
+      </div>
+      </section>
+    </div>
+
+  
+   
+</body>
+</html>
