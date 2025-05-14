@@ -102,3 +102,9 @@
   #forum{
     margin-top: 200px;
   }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
