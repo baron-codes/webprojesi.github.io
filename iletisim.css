@@ -103,8 +103,16 @@
     margin-top: 200px;
   }
 
+:root {
+    --font-size: 16px;
+}
+
+body {
+    font-size: var(--font-size);
+}
+
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
+    :root {
+        --font-size: 14px;
     }
 }
