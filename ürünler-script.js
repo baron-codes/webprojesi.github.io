@@ -45,14 +45,30 @@ window.onload = function () {
 
   const fiyatlar = {
   'Coilover':10000,
-  'Varex Egzoz Kiti':4.976,
-  'Air Süspansiyon Sistemi':30.000,
   'Spoiler': 1600,
   'Kelebek Cam Kaplama ': 498,
   'Ön Lip': 1500,
   'Özel Plakalık': 400,
-  'Body Kit': 9000,
+  'Body Kit':  9000,
   'Kamber Kiti': 9000,
+  'Areon Koku': 450,
+  'Yarasa Ayna': 500,
+  'Koltuk Kılıfı': 400,
+  'Air': 30000,
+  'Varex': 4976,
+  'Kule Gergisi': 5500,
+  'Flanşlar': 2500,
+  'SSR Jant': 35000,
+  'Kamber Kiti': 6000,
+  'Açık Hava': 1500,
+  'Amarikan Park': 600,
+  'Double Ekran': 13000,
+  'Sis Ledi': 1500,
+  'Geri Dönüş Kamerası': 900,
+  'Reiss Midrange': 4588,
+  'Ayak Altı Led': 700,
+  'Diadem Ampul ': 800,
+  'Xenon Far': 13000,
 };
 
 function sepetEkle(urunAdi) {
@@ -82,5 +98,30 @@ function sepetiGoster() {
   document.getElementById('toplamTutar').textContent = `Toplam: ${toplam} TL`;
 }
 
+
+// deneme son son
+
+function sepetiOnayla() {
+    const telNo = "905444741612"; // ← kendi telefon numaranı başında 90 ile yaz
+    let mesaj = "Selam, aşağıdaki ürünleri sipariş etmek istiyorum:%0A";
+
+    let toplamTutar = 0;
+
+    for (let urun in sepet) {
+        const adet = sepet[urun];
+        // Burada fiyatı alacağız
+        const fiyatElement = document.querySelector(`[onclick*="${urun}"]`).previousElementSibling;
+        const fiyatMetni = fiyatElement.textContent;
+        const fiyat = parseInt(fiyatMetni.replace(/\D/g, '')); // Sadece sayıyı al
+
+        toplamTutar += fiyat * adet;
+        mesaj += `- ${urun} x${adet} = ${fiyat * adet} TL%0A`;
+    }
+
+    mesaj += `%0AToplam: ${toplamTutar} TL`;
+
+    const whatsappLink = `https://wa.me/${telNo}?text=${mesaj}`;
+    window.open(whatsappLink, '_blank');
+}
 
   
